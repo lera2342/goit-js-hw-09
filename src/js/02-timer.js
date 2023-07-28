@@ -42,11 +42,12 @@ function startCount() {
     minute.textContent = addLeadingZero(minutes);
     second.textContent = addLeadingZero(seconds);
     if (remainder < 1000) {
-      Notify.success('Time is over');
       clearInterval(timer);
+      Notify.success('Time is over');
       inputText.disabled = false;
     };
   }, 1000);
+  
 }
 
 
